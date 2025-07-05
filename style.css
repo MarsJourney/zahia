@@ -10,10 +10,11 @@ body {
   box-sizing: border-box;
 }
 
-
 .envelope {
-  width: 300px;
-  height: 220px;
+  width: 80vw;           /* дэлгэцийн 80 хувь */
+  max-width: 400px;      /* хамгийн их өргөн */
+  height: auto;
+  aspect-ratio: 5 / 4;   /* 400px x 320px харьцаа */
   background-image: url("890.png");
   background-size: cover;
   background-position: center;
@@ -22,10 +23,11 @@ body {
   overflow: visible; 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 .envelope:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .flap {
@@ -36,9 +38,11 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 420px;
-  height: 320px;
-  transform: translate(-50%, -50%) scale(0); /* анх жижигхэн */
+  width: 85vw;           /* дэлгэцийн 85 хувь */
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 21 / 16; /* 420px x 320px харьцаа */
+  transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
   z-index: 2;
@@ -46,21 +50,20 @@ body {
 
 .letter-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   border-radius: 12px;
 }
 
-@media (max-width: 600px) {
-  .letter {
-    width: 90vw;     
-    height: auto;    
+/* 800px хүртэлх дэлгэцэнд */
+@media (max-width: 800px) {
+  .envelope {
+    width: 90vw;
+    max-width: 360px;
   }
 
-  .letter-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  .letter {
+    width: 90vw;
+    max-width: 380px;
   }
 }
-
