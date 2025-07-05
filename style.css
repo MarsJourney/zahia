@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #f0eae2;
+  background: #f7d7f4;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -11,10 +11,10 @@ body {
 }
 
 .envelope {
-  width: 80vw;           /* дэлгэцийн 80 хувь */
-  max-width: 700px;      /* хамгийн их өргөн */
+  width: 80vw;           
+  max-width: 700px;      
   height: auto;
-  aspect-ratio: 5 / 4;   /* 400px x 320px харьцаа */
+  aspect-ratio: 5 / 4;   
   background-image: url("890.png");
   background-size: cover;
   background-position: center;
@@ -38,10 +38,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 85vw;           /* дэлгэцийн 85 хувь */
+  width: 85vw;           
   max-width: 420px;
   height: auto;
-  aspect-ratio: 21 / 16; /* 420px x 320px харьцаа */
+  aspect-ratio: 21 / 16; 
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
