@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #f7d7f4;
+  background: #f0eae2;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -11,38 +11,32 @@ body {
 }
 
 .envelope {
-  width: 60vw;           
-  max-width: 400px;      
-  height: auto;
-  aspect-ratio: 5 / 4;   
+  width: 85vw;              /* дэлгэцийн 85% */
+  max-width: 340px;         /* хамгийн их өргөн */
+  aspect-ratio: 5 / 4;      /* 400:320 харьцааг хадгалах */
   background-image: url("890.png");
   background-size: cover;
   background-position: center;
   position: relative;
   cursor: pointer;
-  overflow: visible; 
+  overflow: visible;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
 .envelope:hover {
-  transform: scale(1.1);
-}
-
-.flap {
-  display: none;
+  transform: scale(1.05);   /* зөөлөн томрох effect */
 }
 
 .letter {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 85vw;           
-  max-width: 420px;
-  height: auto;
-  aspect-ratio: 21 / 16; 
-  transform: translate(-50%, -50%) scale(0);
+  width: 90vw;              /* дэлгэцийн 90% */
+  max-width: 360px;         /* хамгийн их өргөн */
+  aspect-ratio: 21 / 16;    /* 420:320 харьцааг хадгалах */
+  transform: translate(-50%, -50%) scale(0); /* эхэндээ нуугдсан */
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
   z-index: 2;
@@ -55,15 +49,9 @@ body {
   border-radius: 12px;
 }
 
-/* 800px хүртэлх дэлгэцэнд */
-@media (max-width: 800px) {
+/* Гар утсан дээр илүү responsive */
+@media (max-width: 600px) {
   .envelope {
-    width: 60vw;
-    max-width: 360px;
+    width: 90vw;
+    max-width: 320px;
   }
-
-  .letter {
-    width: 60vw;
-    max-width: 380px;
-  }
-}
