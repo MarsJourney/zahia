@@ -11,9 +11,8 @@ body {
 }
 
 .envelope {
-  width: 50vw;              
-  max-width: 2400px;         
-  aspect-ratio: 5 / 4;      
+  width: 240px;              
+  height: 192px;             
   background-image: url("890.png");
   background-size: cover;
   background-position: center;
@@ -33,9 +32,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50vw;              
-  max-width: 250px;         
-  aspect-ratio: 21 / 16;    
+  width: 260px;              
+  height: 198px;             
   transform: translate(-50%, -50%) scale(0);
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
@@ -44,19 +42,6 @@ body {
 
 .letter-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
-  border-radius: 12px;
-}
-
-@media (max-width: 600px) {
-  .envelope {
-    width: 75vw;
-    max-width: 260px;
-  }
-
-  .letter {
-    width: 80vw;
-    max-width: 280px;
-  }
-}
+  bor
