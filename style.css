@@ -12,7 +12,7 @@ body {
 
 .envelope {
   width: 80vw;           /* дэлгэцийн 80 хувь */
-  max-width: 400px;      /* хамгийн их өргөн */
+  max-width: 700px;      /* хамгийн их өргөн */
   height: auto;
   aspect-ratio: 5 / 4;   /* 400px x 320px харьцаа */
   background-image: url("890.png");
