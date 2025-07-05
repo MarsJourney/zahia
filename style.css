@@ -11,9 +11,9 @@ body {
 }
 
 .envelope {
-  width: 85vw;              /* дэлгэцийн 85% */
-  max-width: 340px;         /* хамгийн их өргөн */
-  aspect-ratio: 5 / 4;      /* 400:320 харьцааг хадгалах */
+  width: 85vw;              
+  max-width: 340px;         
+  aspect-ratio: 5 / 4;      
   background-image: url("890.png");
   background-size: cover;
   background-position: center;
@@ -26,17 +26,17 @@ body {
 }
 
 .envelope:hover {
-  transform: scale(1.05);   /* зөөлөн томрох effect */
+  transform: scale(1.05);   
 }
 
 .letter {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90vw;              /* дэлгэцийн 90% */
-  max-width: 360px;         /* хамгийн их өргөн */
-  aspect-ratio: 21 / 16;    /* 420:320 харьцааг хадгалах */
-  transform: translate(-50%, -50%) scale(0); /* эхэндээ нуугдсан */
+  width: 90vw;              
+  max-width: 360px;         
+  aspect-ratio: 21 / 16;    
+  transform: translate(-50%, -50%) scale(0); 
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
   z-index: 2;
@@ -49,7 +49,6 @@ body {
   border-radius: 12px;
 }
 
-/* Гар утсан дээр илүү responsive */
 @media (max-width: 600px) {
   .envelope {
     width: 90vw;
