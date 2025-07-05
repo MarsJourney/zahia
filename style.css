@@ -58,12 +58,12 @@ body {
 /* 800px хүртэлх дэлгэцэнд */
 @media (max-width: 800px) {
   .envelope {
-    width: 90vw;
+    width: 60vw;
     max-width: 360px;
   }
 
   .letter {
-    width: 90vw;
+    width: 60vw;
     max-width: 380px;
   }
 }
